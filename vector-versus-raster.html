@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vector versus raster</title>
+</head>
+<body>
+    <h1>Vector versus raster</h1>
+   
+    <img src="images/star.png" alt="A raster star">
+    <img src="images/star.svg" alt="A vector star">
+
+    <!-- 大胆的使用现代图像格式 webp-->
+    <picture>
+        <source type="images/svg" srcset="images/star.svg">
+        <source type="images/png" srcset="images/star.png">
+        <source type="images/webp" srcset="images/star.webp">
+        <img src="images/star.jpg" alt="This is a star">
+    </picture>
+</body>
+</html>

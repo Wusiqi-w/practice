@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple svg</title>
+</head>
+
+<body>
+    <h1>Simple svg</h1>
+    <!-- 创建一个圆和矩形 -->
+    <svg version="1.1" baseProfile="full" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="pink" />
+        <circle cx="150" cy="100" r="90" fill="yellow">
+
+    </svg>
+
+    <!-- 将SVG添加到页面-->
+    <img src="images/star.svg" alt="A star" height="87px" width="100px"/>
+
+    <!-- 跨浏览器支持 -->
+    <img src="images/star.png" alt="A star" srcset="images/star.svg"/>
+
+    <!-- 在HTML中引入SVG代码-->
+    <svg width="300" height="200">
+        <rect width="100%" height="100%" fill="green">
+
+    </svg>
+</body>
+
+</html>

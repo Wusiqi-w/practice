@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive HTML images demo</title>
+    <style>
+        .im {
+            width: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive HTML images demo</h1>
+
+    <!-- 创建自适应的图片 -->
+
+    <!-- 分辨率切换，不同的尺寸 -->
+
+    <img srcset="images/elva-fairy-320w.jpg 320w,
+        images/elva-fairy-480w.jpg 480w,
+        images/elva-fairy-800w.jpg 800w"
+         sizes="(max-width: 320px) 280px,
+              (max-width: 480px) 440px,
+              800px" 
+         src="images/elva-fairy-800w.jpg"
+         alt="Elva dressed as a fairy">
+
+    <!-- 分辨率切换：相同的尺寸，不同的分辨率 -->
+    <img class="im" srcset="images/elva-fairy-320w.jpg
+                 images/elva-fairy-480w.jpg 1.5x,
+                 images/elva-fairy-640w.jpg 2x"
+         src="images/elva-fairy-640w.jpg"
+         alt="Elva dressed as a fairy"
+                 >
+</body>
+
+</html>
